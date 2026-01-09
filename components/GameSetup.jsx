@@ -358,7 +358,7 @@ Abis
                 <div className="relative">
                   <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">🏆</div>
                   <h3 className="text-2xl font-bold text-white mb-3">الترتيب</h3>
-                  <p className="text-gray-400 mb-4">رتب اللاعبين والمشاهير حسب معايير مختلفة واختبر معرفتك!</p>
+                  <p className="text-gray-400 mb-4">رتب اللاعبين والمشاهير     !</p>
                   <div className="flex flex-wrap gap-2">
                     <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-lg text-sm">لاعبين</span>
                     <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-lg text-sm">تحدي</span>
