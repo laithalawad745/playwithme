@@ -38,6 +38,30 @@ const gameData = {
     { id: '8', name: ' هههههههه', image: '/discord/8.jpg' },
     { id: '9', name: ' عندك سناب', image: '/discord/9.jpg' },
     { id: '10', name: ' مصري 100 دولار', image: '/discord/10.jpg' }
+  ],
+  youtube: [
+    { id: '1', name: 'مستر بيست', image: '/youtube/1.jpg' },
+    { id: '2', name: 'سبيد ', image: '/youtube/2.jpg' },
+    { id: '3', name: 'بندر', image: '/youtube/3.jpg' },
+    { id: '4', name: 'ابو فلة', image: '/youtube/4.jpg' },
+    { id: '5', name: 'ابو خليل', image: '/youtube/5.jpg' },
+    { id: '6', name: 'بشار عربي', image: '/youtube/6.jpg' },
+    { id: '7', name: 'البياتي', image: '/youtube/7.jpg' },
+    { id: '8', name: 'ابو طلال', image: '/youtube/8.jpg' },
+    { id: '9', name: 'محمد عدنان', image: '/youtube/9.jpg' },
+    { id: '10', name: 'مليون روسيس', image: '/youtube/10.jpg' }
+  ],
+  eat: [
+    { id: '1', name: 'كفتة', image: '/eat/1.jpg' },
+    { id: '2', name: 'قلاية بندورة', image: '/eat/2.jpg' },
+    { id: '3', name: 'مقلوبة', image: '/eat/3.jpg' },
+    { id: '4', name: 'منسف', image: '/eat/4.jpg' },
+    { id: '5', name: 'اذان الشايب', image: '/eat/5.jpg' },
+    { id: '6', name: 'مكمورة', image: '/eat/6.jpg' },
+    { id: '7', name: 'ملوخية', image: '/eat/7.jpg' },
+    { id: '8', name: 'الرشوف', image: '/eat/8.jpg' },
+    { id: '9', name: 'دوالي و كوسا', image: '/eat/9.jpg' },
+    { id: '10', name: 'صينية بطاطا', image: '/eat/10.jpg' }
   ]
 };
 
@@ -164,7 +188,7 @@ export default function RankingGame() {
               اختر فئة
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
               <button
                 onClick={() => startGame('sports')}
                 className="group p-8 bg-white/5 border-2 border-white/20 rounded-2xl hover:bg-white/10 hover:border-green-400 transition-all duration-300 hover:scale-105"
@@ -191,6 +215,24 @@ export default function RankingGame() {
                 <h3 className="text-2xl font-bold text-white mb-2">ديسكورد</h3>
                 <p className="text-gray-300">أعضاء الفريق</p>
               </button>
+
+              <button
+                onClick={() => startGame('youtube')}
+                className="group p-8 bg-white/5 border-2 border-white/20 rounded-2xl hover:bg-white/10 hover:border-red-400 transition-all duration-300 hover:scale-105"
+              >
+                <div className="text-6xl mb-4">📺</div>
+                <h3 className="text-2xl font-bold text-white mb-2">يوتيوبرز</h3>
+                <p className="text-gray-300">صناع المحتوى</p>
+              </button>
+
+              <button
+                onClick={() => startGame('eat')}
+                className="group p-8 bg-white/5 border-2 border-white/20 rounded-2xl hover:bg-white/10 hover:border-orange-400 transition-all duration-300 hover:scale-105"
+              >
+                <div className="text-6xl mb-4">🍔</div>
+                <h3 className="text-2xl font-bold text-white mb-2">أكلات</h3>
+                <p className="text-gray-300">أطباق مفضلة</p>
+              </button>
             </div>
           </div>
         </div>
@@ -202,7 +244,9 @@ export default function RankingGame() {
     const categoryNames = {
       sports: 'رياضة ⚽',
       celebrities: 'مشاهير 🌟',
-      discord: 'ديسكورد 🎮'
+      discord: 'ديسكورد 🎮',
+      youtube: 'يوتيوبرز 📺',
+      eat: 'أكلات 🍔'
     };
 
     return (
@@ -254,6 +298,20 @@ export default function RankingGame() {
                   >
                     <span className="text-2xl">🎮</span>
                     <span className="font-bold">ديسكورد</span>
+                  </button>
+                  <button
+                    onClick={() => startGame('youtube')}
+                    className="w-full p-4 bg-red-500/30 border-2 border-red-400 text-white rounded-xl hover:bg-red-500/50 transition-all flex items-center gap-3"
+                  >
+                    <span className="text-2xl">📺</span>
+                    <span className="font-bold">يوتيوبرز</span>
+                  </button>
+                  <button
+                    onClick={() => startGame('eat')}
+                    className="w-full p-4 bg-orange-500/30 border-2 border-orange-400 text-white rounded-xl hover:bg-orange-500/50 transition-all flex items-center gap-3"
+                  >
+                    <span className="text-2xl">🍔</span>
+                    <span className="font-bold">أكلات</span>
                   </button>
                   <button
                     onClick={() => setShowOptions(false)}
@@ -318,7 +376,7 @@ export default function RankingGame() {
                         </>
                       ) : (
                         <div className="flex-1 text-gray-400 text-sm">
-                          {selectedSlot === index ? '👈 اختر صورة من اليمين' : 'انقر للاختيار'}
+                          {selectedSlot === index ? ' اختر صورة من اليمين' : 'انقر للاختيار'}
                         </div>
                       )}
                     </div>
