@@ -21,7 +21,7 @@ export default function GameSetup() {
         <div className="flex justify-between items-center mb-12">
           <div className="text-4xl md:text-5xl font-black text-white tracking-wider">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-Abis
+Absi
             </span>
           </div>
           <Link 
@@ -37,7 +37,7 @@ Abis
           <h1 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight">
             منصة العاب
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
-              Abis
+              Absi
             </span>
           </h1>
           {/* <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto">

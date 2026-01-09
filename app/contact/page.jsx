@@ -19,7 +19,7 @@ export default function Contact() {
         <div className="flex justify-between items-center mb-12">
           <div className="text-4xl md:text-5xl font-black text-white tracking-wider">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-              Abis
+              Absi
             </span>
           </div>
           <Link 
