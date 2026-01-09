@@ -21,7 +21,7 @@ export default function GameSetup() {
         <div className="flex justify-between items-center mb-12">
           <div className="text-4xl md:text-5xl font-black text-white tracking-wider">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">
-              Play With My
+Abis
             </span>
           </div>
           <Link 
@@ -35,14 +35,14 @@ export default function GameSetup() {
         {/* العنوان الرئيسي */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-7xl font-black text-white mb-6 tracking-tight">
-            منصة الألعاب
+            منصة العاب
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
-              التفاعلية
+              Abis
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto">
+          {/* <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl mx-auto">
             اكتشف عالماً من التحديات والمتعة مع أصدقائك
-          </p>
+          </p> */}
         </div>
 
         {/* شبكة الألعاب */}
@@ -352,6 +352,21 @@ export default function GameSetup() {
     </div>
   </div>
 </Link>
+      <Link href="/ranking" className="group">
+              <div className="relative p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:border-yellow-500/50">
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/0 to-orange-500/0 group-hover:from-yellow-500/10 group-hover:to-orange-500/10 rounded-3xl transition-all duration-500"></div>
+                <div className="relative">
+                  <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">🏆</div>
+                  <h3 className="text-2xl font-bold text-white mb-3">الترتيب</h3>
+                  <p className="text-gray-400 mb-4">رتب اللاعبين والمشاهير حسب معايير مختلفة واختبر معرفتك!</p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-yellow-500/20 text-yellow-400 rounded-lg text-sm">لاعبين</span>
+                    <span className="px-3 py-1 bg-orange-500/20 text-orange-400 rounded-lg text-sm">تحدي</span>
+                    <span className="px-3 py-1 bg-amber-500/20 text-amber-400 rounded-lg text-sm">معرفة</span>
+                  </div>
+                </div>
+              </div>
+            </Link>
             {/* خريطة أوروبا */}
             <Link href="/europe" className="group">
               <div className="relative p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:border-blue-500/50">
