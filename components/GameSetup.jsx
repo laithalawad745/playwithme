@@ -114,7 +114,20 @@ Absi
                 </div>
               </div>
             </Link> */}
-
+<Link href="/snakes-ladders-online" className="group">
+  <div className="relative p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:border-green-500/50">
+    <div className="absolute inset-0 bg-gradient-to-br from-green-500/0 to-lime-500/0 group-hover:from-green-500/10 group-hover:to-lime-500/10 rounded-3xl transition-all duration-500"></div>
+    <div className="relative">
+      <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">🐍</div>
+      <h3 className="text-2xl font-bold text-white mb-3">الثعبان والسلم</h3>
+      <p className="text-gray-400 mb-4">تسلق السلالم وتجنب الثعابين!</p>
+      <div className="flex flex-wrap gap-2">
+        <span className="px-3 py-1 bg-green-500/20 text-green-400 rounded-lg text-sm">2-7 لاعبين</span>
+        <span className="px-3 py-1 bg-lime-500/20 text-lime-400 rounded-lg text-sm">أونلاين</span>
+      </div>
+    </div>
+  </div>
+</Link>
             {/* الأسرع */}
             <Link href="/fastest" className="group">
               <div className="relative p-8 bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:border-orange-500/50">
